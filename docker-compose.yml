@@ -6,6 +6,8 @@ services:
       - "8080:8080" 
     environment:
       - CURRENT_ENVIRONMENT=development
+    volumes:
+      - ./backend_data:/app/logs # Mount a local directory to persist backend data
 
   my-frontend:
     image: meruem1erdunom/myrepo:front
