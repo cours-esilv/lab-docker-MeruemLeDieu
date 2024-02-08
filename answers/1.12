@@ -1,0 +1,1 @@
+docker run -d --name front-container -p 8081:80 -e WS_BACK_URL=http://172.17.0.2:5000 meruem1erdunom/myrepo:front
