@@ -2,3 +2,14 @@ version: '3'
 services:
   my-backend:
     image: meruem1erdunom/myrepo:back
+    ports:
+      - "8080:8080" 
+    environment:
+      - CURRENT_ENVIRONMENT=development
+
+  my-frontend:
+    image: meruem1erdunom/myrepo:front
+    ports:
+      - "8081:80"
+    environment:
+      - WS_BACK_URL=http://172.17.0.2:5000/
