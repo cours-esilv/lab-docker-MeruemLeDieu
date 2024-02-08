@@ -12,4 +12,4 @@ services:
     ports:
       - "8081:80"
     environment:
-      - WS_BACK_URL=http://172.17.0.2:5000/
+      - WS_BACK_URL=http://172.18.0.3:5000/
